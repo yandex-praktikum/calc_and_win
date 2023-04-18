@@ -44,7 +44,7 @@ def run_game():
     user_total_attack = get_user_attack()
     enemy_health = set_enemy_health()
     print(f'Тобой нанесён урон противнику равный {user_total_attack}.')
-    print(f'Очки здоровья противника после твоей атаки: {enemy_health}.')
+    print(f'Очки здоровья противника до твоей атаки: {enemy_health}.')
     if compare_valumes(enemy_health, user_total_attack):
         print('Ура! Победа за тобой!')
     else:
